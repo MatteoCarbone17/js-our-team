@@ -9,49 +9,63 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe 
 */
 
-const divElement = document.getElementById(output);
+
 
 const listTeam = [
-    {
-        name :  'Wayne Barnett',
+   {
+        name :  'Wayne Barnett   ',
         role :'Founder & CEO',
         picture : 'wayne-barnett-founder-ceo.jpg',
     },
     {
-        name : 'Walter Gordon',
+        name : 'Walter Gordon   ',
         role : 'Office Manager ',
         picture :'walter-gordon-office-manager.jpg', 
     },
     {
-        name : 'Angela Caroll',
-        role : 'Chief Editor',
+        name : 'Angela Caroll ',
+        role : 'Chief Editor ',
         picture : 'angela-caroll-chief-editor.jpg',
     },
     {
-        name : 'Angela Lopez',
+        name : 'Angela Lopez ',
         role :'Social Media',
         picture : 'Manager  angela-lopez-social-media-manager.jpg',
     },
     {
-        name : 'Scott Estrada ',
+        name : 'Scott Estrada   ',
         role :'Developer  ',
         picture : 'scott-estrada-developer.jpg',
     },
     {
-        name : 'Barbara Ramos',
+        name : 'Barbara Ramos   ',
         role :'Graphic Designer',
         picture : 'barbara-ramos-graphic-designer.jpg',
     },
 ];
+ 
 
 
-for (const key in listTeam) {
-    console.log(key , ':' , listTeam[key] );
+const nameElement = document.getElementById('name');
+const roleElement = document.getElementById('role');
+const pictureElement = document.getElementById('picture');
 
-    output.innerHTML = '<span class="m-auto">'  + key , ':' , listTeam[key] + '</span>';
+ 
 
 
-};
+
+ for (const key in listTeam) {
+
+    nameElement.innerHTML += listTeam[key].name
+
+    roleElement.innerHTML += listTeam[key].role
+
+    pictureElement.innerHTML += listTeam[key].picture
+    
+
+
+ }
+
 
 
         
