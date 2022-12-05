@@ -47,9 +47,9 @@ const listTeam = [
 
 for (const key in listTeam) {
     console.log(key , ':' , listTeam[key] );
-   
-    
-    
+
+    output.innerHTML = '<span class="m-auto">'  + key , ':' , listTeam[key] + '</span>';
+
 
 };
 
