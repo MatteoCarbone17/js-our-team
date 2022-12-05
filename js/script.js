@@ -9,7 +9,7 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe 
 */
 
-
+const divElement = document.getElementById(output);
 
 const listTeam = [
     {
@@ -42,7 +42,16 @@ const listTeam = [
         role :'Graphic Designer',
         picture : 'barbara-ramos-graphic-designer.jpg',
     },
-]
+];
+
+
+for (const key in listTeam) {
+    console.log(key , ':' , listTeam[key] );
+   
+    
+    
+
+};
 
 
         
